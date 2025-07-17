@@ -1,0 +1,28 @@
+h1 {
+  font-family: $mainFont;
+  font-weight: 700;
+  font-size: 90px;
+  line-height: 114px;
+  color: $white;
+}
+p {
+  &.sm {
+    font-family: $mainFont;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+main {
+}
+body.active {
+  overflow: hidden;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

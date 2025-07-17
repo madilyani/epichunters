@@ -1,0 +1,95 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  background: rgba($color: #000000, $alpha: 0.56);
+  flex-direction: column;
+  overflow-y: auto;
+  padding: 50px 15px;
+  display: none;
+  box-sizing: border-box;
+  animation: fadeIn 0.4s ease-in-out;
+  &.active {
+    display: flex;
+  }
+  &__inner {
+    max-width: 993px;
+    margin: auto;
+    width: 100%;
+    box-sizing: border-box;
+    background: $white;
+    position: relative;
+    border-radius: 35px;
+    padding: 96px 61px;
+    p {
+      font-family: $inter;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 28px;
+      text-align: center;
+      color: $black;
+      max-height: 372px;
+      overflow-y: auto;
+    }
+  }
+  &__close {
+    position: absolute;
+    width: 27px;
+    height: 27px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $white;
+    right: 39px;
+    top: 39px;
+    cursor: pointer;
+    &:hover {
+      svg {
+        transform: rotate(180deg);
+        color: #5e7600;
+      }
+    }
+    svg {
+      @include transition;
+      width: 100%;
+      color: #000000;
+      height: 100%;
+      pointer-events: none;
+    }
+  }
+}
+@mixin modal-md-lg {
+  .modal {
+    &__inner {
+      padding: 58px 26px;
+      p {
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+    &__close {
+      width: 17px;
+      height: 17px;
+      top: 24px;
+      right: 25px;
+    }
+  }
+}
+@mixin modal-xsm-sm {
+  .modal {
+    &__inner {
+      padding: 58px 9px 41px 26px;
+      max-height: 471px;
+      height: 100%;
+      p {
+        height: 100%;
+        font-size: 14px;
+        line-height: 20px;
+        padding-right: 17px;
+      }
+    }
+  }
+}

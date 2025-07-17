@@ -759,6 +759,18 @@ body.active {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.intro__cards-inner {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 .intro__card {
   max-width: 286px;
@@ -805,6 +817,10 @@ body.active {
   -o-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
+  width: 17px;
+  height: 25px;
+  -o-object-fit: contain;
+     object-fit: contain;
   -webkit-filter: drop-shadow(0px 10px 6px rgba(255, 255, 255, 0.15));
           filter: drop-shadow(0px 10px 6px rgba(255, 255, 255, 0.15));
 }
@@ -1228,6 +1244,7 @@ body.active {
   }
   .intro__cards {
     min-height: unset;
+    display: block;
     margin-bottom: 47px;
   }
   .intro__arrows {
@@ -1259,6 +1276,7 @@ body.active {
     -webkit-transition: all 0.2s ease-in-out 0s;
     transition: all 0.2s ease-in-out 0s;
     -moz-transition: all 0.2s ease-in-out 0s;
+    color: #f6ffd2;
   }
   .intro__arrow.swiper-button-disabled {
     opacity: 0.5 !important;
@@ -1266,12 +1284,12 @@ body.active {
   .intro__arrow:hover {
     opacity: 0.8;
   }
-  .intro__arrow img {
+  .intro__arrow svg {
     width: 24px;
     height: 24px;
     margin-right: 5px;
   }
-  .intro__arrow.swiper-button-next img {
+  .intro__arrow.swiper-button-next svg {
     margin-right: 0;
     margin-left: 5px;
     -webkit-transform: rotate(180deg);

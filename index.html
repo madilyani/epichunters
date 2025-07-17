@@ -50,6 +50,20 @@
     <meta name="twitter:image:height" content="600" />
     <meta name="twitter:image:alt" content="image" />
     <meta name="twitter:card" content="summary_large_image" />
+    <link
+      rel="preload"
+      as="image"
+      href="./src/assets/images/bg.avif"
+      fetchpriority="high"
+      media="(min-width: 541px)"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="./src/assets/images/bg-mobile.avif"
+      fetchpriority="high"
+      media="(max-width: 540px)"
+    />
   </head>
 
   <body>
@@ -58,7 +72,7 @@
     <header class="header" id="header">
       <div class="container">
         <div class="header__inner">
-          <a href="#" class="header__inner-logo">
+          <a href="" class="header__inner-logo" aria-label="Home link">
             <svg>
               <use xlink:href="#logo"></use>
             </svg>

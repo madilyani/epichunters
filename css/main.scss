@@ -1,4 +1,4 @@
-@import "./fonts/stylesheet.css";
+@import "./fonts.scss";
 // 1-main components
 @import "./components/1-main/variables.scss";
 @import "./components/1-main/mixin.scss";
@@ -16,3 +16,4 @@
 
 // responsive
 @import "./components/2-layout/responsive.scss";
+ 

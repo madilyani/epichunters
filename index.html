@@ -50,20 +50,6 @@
     <meta name="twitter:image:height" content="600" />
     <meta name="twitter:image:alt" content="image" />
     <meta name="twitter:card" content="summary_large_image" />
-    <link
-      rel="preload"
-      as="image"
-      href="./src/assets/images/bg.avif"
-      fetchpriority="high"
-      media="(min-width: 541px)"
-    />
-    <link
-      rel="preload"
-      as="image"
-      href="./src/assets/images/bg-mobile.avif"
-      fetchpriority="high"
-      media="(max-width: 540px)"
-    />
   </head>
 
   <body>
@@ -111,12 +97,12 @@
           <picture>
             <source
               media="(max-width: 540px)"
-              srcset="./images/bg-mob.avif"
-              type="image/avif"
+              srcset="./images/bg-mob.webp"
+              type="image/webp"
             />
             <img
-              src="./images/bg.avif"
-              loading="lazy"
+              src="./images/bg.webp"
+              loading="eager"
               alt="Beautiful landscape background"
             />
           </picture>
@@ -206,23 +192,21 @@
                 </div>
               </div>
               <div class="intro__line one">
-                <img src="./images/lines/1.avif" alt="1-line" />
+                <img src="./images/lines/1.webp" alt="1-line" />
               </div>
               <div class="intro__line two">
-                <img src="./images/lines/2.avif" alt="2-line" />
+                <img src="./images/lines/2.webp" alt="2-line" />
               </div>
               <div class="intro__line three">
-                <img src="./images/lines/3.avif" alt="3-line" />
+                <img src="./images/lines/3.webp" alt="3-line" />
               </div>
               <div class="intro__line four">
-                <img src="./images/lines/4.avif" alt="4-line" />
+                <img src="./images/lines/4.webp" alt="4-line" />
               </div>
               <div class="intro__line five">
-                <img src="./images/lines/5.avif" alt="5-line" />
+                <img src="./images/lines/5.webp" alt="5-line" />
               </div>
-              <div class="intro__line five">
-                <img src="./images/lines/5.avif" alt="5-line" />
-              </div>
+
               <div class="intro__arrows">
                 <div class="intro__arrow swiper-button-prev">
                   <img src="./images/icons/arrow.svg" alt="arrow-left" />

@@ -7,11 +7,11 @@
   z-index: 1000;
   background: rgba($color: #000000, $alpha: 0.56);
   flex-direction: column;
-  overflow-y: auto;
-  padding: 50px 15px;
+  padding: 15px;
   display: none;
   box-sizing: border-box;
   animation: fadeIn 0.4s ease-in-out;
+  flex-direction: column;
   &.active {
     display: flex;
   }
@@ -24,6 +24,13 @@
     position: relative;
     border-radius: 35px;
     padding: 96px 61px;
+    display: flex;
+    flex-direction: column;
+    max-height: 100%;
+    &-body {
+      flex: 1;
+      overflow-y: auto;
+    }
     p {
       font-family: $inter;
       font-weight: 400;
@@ -31,8 +38,6 @@
       line-height: 28px;
       text-align: center;
       color: $black;
-      max-height: 372px;
-      overflow-y: auto;
     }
   }
   &__close {
@@ -80,10 +85,9 @@
 }
 @mixin modal-xsm-sm {
   .modal {
+    padding: 50px 16px;
     &__inner {
       padding: 58px 9px 41px 26px;
-      max-height: 471px;
-      height: 100%;
       p {
         height: 100%;
         font-size: 14px;

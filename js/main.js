@@ -17,9 +17,11 @@ let infoBtn = document.getElementById("infoBtn");
 let modalClose = document.getElementById("modalClose");
 infoBtn.onclick = () => {
   infoModal.classList.toggle("active");
+  body.classList.toggle("active");
 };
 modalClose.onclick = () => {
   infoModal.classList.remove("active");
+  body.classList.remove("active");
 };
 
 window.addEventListener("click", (e) => {
@@ -31,9 +33,9 @@ window.addEventListener("click", (e) => {
   }
   if (e.target === infoModal) {
     infoModal.classList.remove("active");
+    body.classList.remove("active");
   }
 });
-
 
 // menu logic end
 document.addEventListener("DOMContentLoaded", function () {

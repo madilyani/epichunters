@@ -37,7 +37,7 @@ window.addEventListener("click", (e) => {
 
 // menu logic end
 document.addEventListener("DOMContentLoaded", function () {
-  const introContainer = document.querySelector(".intro__items-inner");
+  const introContainer = document.querySelector(".intro__cards-inner");
 
   // Check if mobile device (you can adjust this breakpoint)
   function isMobile() {
